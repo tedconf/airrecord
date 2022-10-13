@@ -34,16 +34,6 @@ module Airrecord
       end
     end
 
-    def call(env)
-      @mutex.synchronize do
-        wait if too_many_requests_in_last_second?
-        @app.call(env).on_complete do |_response_env|
-          requests << Process.clock_gettime(Process::CLOCK_MONOTONIC)
-          requests.shift if requests.size > @rps
-        end
-      end
-    end
-
     def clear
       self.class.requests = []
     end
