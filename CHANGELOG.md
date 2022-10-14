@@ -1,3 +1,6 @@
+# 1.0.12
+* Fix Faraday version restriction from a bad merge.
+
 # 1.0.11
 * Update faraday_rate_limiter.rb to maintain compatibility with Faraday < 1 with Ruby 3 (#92).
 * Remove compatibility restriction from Gemfile.
