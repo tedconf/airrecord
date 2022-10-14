@@ -1,5 +1,9 @@
 # Airrecord
 
+## 🚨 This is a Public Repo 🚨
+
+Do not commit any private data or secrets to this repo. It is *public*.
+
 ## TED Fork of Airrecord
 This is a TED fork of Airrecord to maintain compatbility with Ruby 3 and Faraday v0.10.x.
 It *will not* work with Faraday v2. If you want Faraday v2 you need to go back to the main gem.
